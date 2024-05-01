@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950">
+
+                <div id="container" class="w-full h-screen flex justify-center items-center">
+                    <div id="main" class="flex flex-col gap-y-6 text-white w-96  border-2 border-white p-6 rounded">
+                        <div class="w-full flex items-center justify-center">
+                            <span class="flex justify-center items-center w-full h-[100px] rounded text-black text-2xl font-medium bg-white text-wrap overflow-x-scroll"  id="result">Testing</span>
+                        </div>
+                        <div  class="flex justify-between">
+                            <label for="passLength">Password Length</label>
+                            <input type="number" name="" id="passLength" class="w-10 h-6 text-black" max="30" min="2" value="4">
+                        </div>
+
+                        <div class="flex justify-between">
+                            <label for="upper">Uppercase</label>
+                            <input type="checkbox" name="" id="upper" checked>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <label for="lower">Lowercase</label>
+                            <input type="checkbox" name="" id="lower">
+                        </div>
+
+                        <div class="flex justify-between">
+                            <label for="number">Number</label>
+                            <input type="checkbox" name="" id="number">
+                        </div>
+
+                        <div class="flex justify-between">
+                            <label for="symbol">Symbol</label>
+                            <input type="checkbox" name="" id="symbol">
+                        </div>
+
+                        <div>
+                            <Button id="btn" class="bg-violet-800 p-2 rounded-md w-full text-xl font-bold mt-3">Generate</Button>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="script.js"></script>
+</body>
+</html>
